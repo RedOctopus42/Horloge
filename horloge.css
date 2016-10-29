@@ -1,0 +1,55 @@
+/*****************/
+/** horloge.css **/
+/*****************/
+
+/*reset css*/
+html, body, div, span, applet, object, iframe,h1, h2, h3, h4, h5, h6, p, blockquote, pre,a, abbr, acronym, address, big, cite, code,del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,b, u, i, center,dl, dt, dd, ol, ul, li,fieldset, form, label, legend,table, caption, tbody, tfoot, thead, tr, th, td,article, aside, canvas, details,
+embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary,time, mark, audio, video
+{margin: 0; padding: 0; border: 0; font-size: 100%; font: inherit; vertical-align: baseline;}
+/* reset html5 - anciens navigateurs */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {display: block;}
+body {line-height: 1; font-family: 'Londrina Solid', cursive; height: 100%; width: 100%;}
+ol, ul {list-style: none;}
+blockquote, q {quotes: none;}
+blockquote:before, blockquote:after,q:before, q:after {content: '';content: none;}
+table {border-collapse: collapse;border-spacing: 0;}
+/*reset css*/
+
+#horloge{position: absolute; background: #ebeff0; overflow: hidden;
+	margin: 5% 2.5% 0 2.5%; width: 100%; height: 100%;
+}
+#horlogeContenu{position: relative; width: inherit; height: inherit;}
+#cercleBase{background: url("images/cercleBase.png"); position: absolute;}
+#logo{background: url("images/logo.png"); position: absolute;}
+#trotteuse{background: url("images/trotteuse.png"); position: absolute;}
+#loupe{background: url("images/loupe.png"); position: absolute;}
+.indicateur{background: url("images/indicateur.png"); position: absolute; top: 0;}
+
+#cercleBase, #logo, #trotteuse, #loupe, .indicateur{
+	height: inherit; width: inherit;
+	-webkit-background-size: 100% 100%;
+	-moz-background-size: 100% 100%;
+	-o-background-size: 100% 100%;
+	background-size: 100% 100%;
+}
+
+#texte{font-family: arial; position: relative;
+	left: -50%; top: 5%; width: 170px;
+	margin: 10px 0 0 190px;
+	text-align: left; letter-spacing: 2px;
+	color: #d37c6b; font-size: 19px;
+}
+
+#cadran{position: relative; left: 45%; top: 100%;
+	margin: -100px 0 0 -150px;
+	height: 40px; width: 150px;
+	border: 3px solid #00a099;
+	border-radius: 8px;
+	box-shadow: -3px 3px 8px rgba(0,0,0,0.6) inset;
+}
+
+#cadran p{position: relative; top: 10px; left: 15px;
+	color: #00a099; font-family: arial; font-size: 20px;
+	text-align: left; 
+}
